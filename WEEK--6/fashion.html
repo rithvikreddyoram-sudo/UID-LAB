@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            text-align: center;
+        }
+        .container{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap: 40px;
+        }
+        .block1{
+            padding: 10px;
+            margin: 10px;
+            border:2px solid;
+            border-radius: 15px;
+        }
+        .block2{
+            padding: 10px;
+            margin: 10px;
+            border:2px solid;
+            border-radius: 15px;
+        }
+        .block3{
+            padding: 10px;
+            margin: 10px;
+            border:2px solid;
+            border-radius: 15px;
+        }
+        .block4{
+            padding: 3px;
+            margin: 10px;
+            border:2px solid;
+            border-radius: 15px;
+        } 
+        .container img{
+            margin:auto;
+            align-items: center;
+            justify-content: center;
+            width:270px;
+            height:300px;
+        }
+        .block1:hover,.block2:hover,.block3:hover,.block4:hover{
+            transform: scale(1.1);
+            transition: transform 0.5s ease;
+        }
+        s{
+            color: red;
+        }
+        pre{
+            text-align: center;
+            font-size: larger;
+            font-weight: bold;
+        }
+        video{
+            position:fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+        .block1 ,.block2 ,.block3 ,.block4{
+            background-color: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(15px);
+        }
+    </style>
+<body>
+    <div class="container">
+    <video controls muted autoplay loop>
+    <source src="videofashion.mp4" >
+    </video>
+        <div class="block1">
+            <img src="https://cdn.pixabay.com/photo/2023/05/06/01/34/t-shirt-7973404_1280.jpg"><pre>  $499  <s>$874</s></pre>
+        </div>
+        <div class="block2">
+            <img src="https://cdn.pixabay.com/photo/2023/05/06/01/33/t-shirt-7973394_1280.jpg"><pre>  $599  <s>$1074</s></pre>
+        </div>
+        <div class="block3">
+            <img src="https://static.vecteezy.com/system/resources/previews/013/675/662/non_2x/denim-isolated-on-white-background-jeans-isoalted-over-white-copy-space-mock-up-photo.jpg">
+            <pre>  $899  <s>$1389</s></pre>
+        </div>
+        <div class="block4">
+            <img src="https://i.pinimg.com/originals/b2/59/0d/b2590d338a37fefcc4b143338c96ed14.jpg">
+            <pre>  $1099  <s>$1699</s></pre>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            text-align: center;
+        }
+        .container{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));       
+            gap: 40px;
+        }
+        .block1{
+            padding: 10px;
+            margin: 10px;
+            border:2px solid;
+            border-radius: 15px;
+        }
+        .block2{
+            padding: 10px;
+            margin: 10px;
+            border:2px solid;
+            border-radius: 15px;
+        }
+        .block3{
+            padding: 10px;
+            margin: 10px;
+            border:2px solid;
+            border-radius: 15px;
+        }
+        .block4{
+            padding: 3px;
+            margin: 10px;
+            border:2px solid;
+            border-radius: 15px;
+        } 
+        .container img{
+            align-items: center;
+            justify-content: center;
+            width:250px;
+            height:300px;
+        }
+        .block1:hover,.block2:hover,.block3:hover,.block4:hover{
+            transform: scale(1.1);
+            transition: transform 0.5s ease;
+        }
+        s{
+            color: red;
+        }
+        pre{
+            text-align: center;
+            font-size: larger;
+            font-weight: bold;
+        }
+        video{
+            position:fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+        .block1 ,.block2 ,.block3 ,.block4{
+            background-color: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(15px);
+        }
+    </style>
+<body>
+    <video controls muted autoplay loop>
+    <source src="videofashion.mp4" >
+    </video>
+    <div class="container">
+        <div class="block1">
+            <img src="https://cdn.shopify.com/s/files/1/0653/9958/7054/files/Nothing_Phone_3_600x600.jpg?v=1732987004"><pre>  $4499  <s>$7874</s></pre>
+        </div>
+        <div class="block2">
+            <img src="https://m.media-amazon.com/images/I/61JvFLHZ6NL._AC_UF1000,1000_QL80_.jpg"><pre>  $19599  <s>$21074</s></pre>
+        </div>
+        <div class="block3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUeSWO9893ivSxUj8JONWA1eE-G4ToQrqlwA&s">
+            <pre>  $1899  <s>$1989</s></pre>
+        </div>
+        <div class="block4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdC7F0uESCKZRrHIRn25nappuNyT3tJIAvkQ&s">
+            <pre>  $11099  <s>$13699</s></pre>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            text-align: center
+            ;
+        }
+        .container{
+            display:flex;
+        }
+        .block1{
+            padding: 10px;
+            margin: 10px;
+            border:2px solid;
+            border-radius: 15px;
+        }
+        .block2{
+            padding: 10px;
+            margin: 10px;
+            border:2px solid;
+            border-radius: 15px;
+        }
+        .block3{
+            padding: 10px;
+            margin: 10px;
+            border:2px solid;
+            border-radius: 15px;
+        }
+        .block4{
+            padding: 3px;
+            margin: 10px;
+            border:2px solid;
+            border-radius: 15px;
+        } 
+        .container img{
+            display: block;
+            margin:auto;
+            align-items: center;
+            justify-content: center;
+            width:250px;
+            height:300px;
+        }
+        .block1:hover,.block2:hover,.block3:hover,.block4:hover{
+            transform: scale(1.1);
+            transition: transform 0.5s ease;
+        }
+        video{
+            position: fixed;
+            top:0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }     
+        .block1 ,.block2 ,.block3 ,.block4{
+            background-color: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(15px);
+        }                 
+    </style>
+<body>
+    <video controls autoplay muted loop>
+        <source src="videofashion.mp4">
+    </video>
+    <div class="container">
+        <div class="block1">
+            <a href="fashion.html"><img src="https://tse4.mm.bing.net/th/id/OIP.DM6IYj0SNz45s-OuOpQT-AHaHa?pid=Api&P=0&h=180"></a>
+        </div>
+        <div class="block2">
+            <a href="moblies.html"><img src="https://static.vecteezy.com/system/resources/previews/033/131/785/non_2x/smart-phone-outline-free-vector.jpg"></a>
+        </div>
+        <div class="block4">
+           <a href="beauty.html"> <img src="https://tse1.mm.bing.net/th/id/OIP.-UD1-vSyYuvNo5ZGGlibZgHaHa?pid=Api&P=0&h=180"> </a>
+        </div>
+        <div class="block3">
+            <a href="electronics.html"> <img src="https://static.vecteezy.com/system/resources/thumbnails/005/002/143/small_2x/laptop-outline-on-white-background-vector.jpg"> </a>
+        </div>
+    </div>
+</body>
+</html>

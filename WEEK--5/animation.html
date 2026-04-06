@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.flip2 {
+animation-name: flip2;
+animation-duration: 6s;
+animation-timing-function: ease-in;
+animation-iteration-count: infinite;
+}
+
+.flip3 {
+animation-name: flip3;
+animation-duration: 8s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+}
+
+.flip4 {
+animation-name: flip4;
+animation-duration: 10s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+@keyframes flip2 {
+0% { margin-top: 0; }
+55% { margin-top: 20px; }
+100% { margin-top: 0; }
+}
+
+@keyframes flip3 {
+0% { margin-top: 0; }
+71% { margin-top: 25px; }
+100% { margin-top: 0; }
+}
+
+@keyframes flip4 {
+0% { margin-top: 0; }
+80% { margin-top: 30px; }
+100% { margin-top: 0; }
+}
+
+</style>
+<body>
+    <div class="flip2">play</div>
+    <div class="flip3">enjoy</div>
+    <div class="flip4">fun!!!</div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            min-height: 100vh;
+        }
+        .heros{
+            display: flex;
+            gap:50px;
+            margin: 20px;
+        }
+        
+        .heros img {
+            width:200;
+            height: 250px;
+            display: block;
+            margin: auto;
+        }
+
+        .heros button{
+            background-color: rgb(109, 106, 97,0);
+            color: rgb(36, 4, 217);
+            display: block;
+            margin: auto;
+            
+        }
+
+        .aa{
+            margin: 10px;
+            padding: 10px;
+        }
+    
+        .aa:hover{
+            transform: scale(1.1);
+            background-color: rgba(178, 178, 178, 0.308);
+            backdrop-filter: blur(5px);
+            border-radius: 15px;
+            margin: 10px;
+            padding: 10px;
+            transition: transform 0.5s ease;
+
+            
+        }
+        .bb{
+            position:fixed;
+            top: 0;
+            left: 0;
+            z-index:-1;
+            width:100%;
+            height:100%;
+            object-fit:cover;
+        }
+        p{
+            color: aliceblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1{
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(255, 0, 0);
+            font-weight: bolder;
+            font-size: xx-large;  
+        }
+        audio{
+            background-color: rgb(161, 51, 51,0);
+            opacity:0;
+        }
+        h3{
+            color: rgb(255, 0, 0);
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>    <audio autoplay controls >
+        <source src="Rakta Charitra Dorikite Chastavu-Remix - DJ ROCK BEATS.mp3"  type="audio/mp3">
+         <h1 style="text-align: center;">tollywood heros</h1>
+    </audio>
+
+    <video class="bb" autoplay loop controls muted playsinline>
+        <source src="Fire_72___45s___4k_res.mp4" type="video/mp4">
+    </video>
+    <div class="heros">
+        <div class="aa">
+            <h3>REBEL ⭐STAR</h3>
+            <img src="pp.jpg" alt="prabhas">
+            <p>Uppalapati Venkata Suryanarayana Prabhas Raju ([pɾabʱaːs]; born 23 October 1979), known mononymously as Prabhas, is an Indian actor who predominantly works in Telugu cinema.[4] He is one of the highest-paid actors in Indian cinema and has been featured in Forbes India's Celebrity 100 list since 2015.[9] Referred to in the media as Rebel Star, he has appeared in over 24 films, and has received seven Filmfare Awards nominations, a Nandi Award, and a SIIMA Award.[10][11]</p>
+            <a href="https://en.wikipedia.org/wiki/Prabhas" target="_blank"><button>Learn more</button></a>
+        </div>
+
+        <div class="aa">
+            <h3>POWER⭐STAR</h3>
+            <img src="ppp.jpg" alt="pawan">
+            <p>Konidela Pawan Kalyan[5] (born Konidela Kalyan Babu;[8] 2 September 1971)[2] is an Indian politician, actor, philanthropist, and martial artist serving as the 11th Deputy Chief Minister of Andhra Pradesh since June 2024. He is also the Minister of Panchayat Raj, Rural Development and Rural Water Supply; Environment, Forest, Science and Technology in the Government of Andhra Pradesh as MLA representing the Pithapuram constituency.[3] He is the founding president of the Janasena Party</p>
+            <a href="https://en.wikipedia.org/wiki/Pawan_Kalyan" target="_blank"><button>Learn more</button></a>
+        </div>
+
+        <div class="aa">
+            <h3>YOUNG🐯TIGER</h3>
+            <img src="nnn.jpg" alt="ntr">
+            <p>Nandamuri Taraka Rama Rao (born 20 May 1983), popularly known as NTR Jr, is an Indian actor, producer, and television presenter who primarily works in Telugu cinema.[1] He is one of the highest-paid actors in Indian cinema and has been featured in Forbes India's Celebrity 100 list since 2012.[2][3] Referred to in the media as the Man of Masses, he has starred in over 30 films.[4] He is a recipient of several accolades including, three Filmfare Awards South, three CineMAA Awards, a SIIMA Award, a IIFA Award and two Nandi Awards.</p>
+            <a href="https://en.wikipedia.org/wiki/N._T._Rama_Rao_Jr." target="_blank"><button>Learn more</button></a>
+        </div>
+    </div>
+</body>
+</html>

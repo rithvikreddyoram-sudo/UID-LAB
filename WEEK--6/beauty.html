@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            text-align: center;
+        }
+        .container{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));       
+            gap: 40px;
+        }
+        .block1{
+            padding: 10px;
+            margin: 10px;
+            border:2px solid;
+            border-radius: 15px;
+        }
+        .block2{
+            padding: 10px;
+            margin: 10px;
+            border:2px solid;
+            border-radius: 15px;
+        }
+        .block3{
+            padding: 10px;
+            margin: 10px;
+            border:2px solid;
+            border-radius: 15px;
+        }
+        .block4{
+            padding: 3px;
+            margin: 10px;
+            border:2px solid;
+            border-radius: 15px;
+        } 
+        .container img{
+            align-items: center;
+            justify-content: center;
+            width:250px;
+            height:300px;
+        }
+        .block1:hover,.block2:hover,.block3:hover,.block4:hover{
+            transform: scale(1.1);
+            transition: transform 0.5s ease;
+        }
+        s{
+            color: red;
+        }
+        pre{
+            text-align: center;
+            font-size: larger;
+            font-weight: bold;
+        }
+        video{
+            position:fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+        .block1 ,.block2 ,.block3 ,.block4{
+            background-color: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(15px);
+        }
+    </style>
+<body>
+    <video controls muted autoplay loop>
+    <source src="videofashion.mp4" >
+    </video>
+    <div class="container">
+        <div class="block1">
+            <img src="https://images.mamaearth.in/catalog/product/r/e/retinol-face-wash-1_8_klmskhukdqnhun1h.jpg"><pre>  $99  <s>$174</s></pre>
+        </div>
+        <div class="block2">
+            <img src="https://plumgoodness.com/cdn/shop/files/1_f812af8f-5735-45be-b0d2-5ddb1b0c8cc6.jpg?v=1742469628&width=900"><pre>  $199  <s>$210</s></pre>
+        </div>
+        <div class="block3">
+            <img src="https://m.media-amazon.com/images/I/81QgE2kRSEL.jpg">
+            <pre>  $189  <s>$198</s></pre>
+        </div>
+        <div class="block4">
+            <img src="https://i5.walmartimages.com/asr/f44132ce-807c-449f-af06-2ab9cbc2bade.945e8615773d52e59006255a5112642d.jpeg">
+            <pre>  $110 <s>$136</s></pre>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student form</title>
+</head>
+    <style>
+        body{
+            background-color: rgb(0, 255, 195);
+        }
+        table{
+           background-color:rgb(220, 255, 195);
+           
+        }
+        td{
+            padding: 5%;
+           
+        }
+    </style>
+<body>
+    <form>
+        <h2 style="text-align: center;color:rgb(0, 0, 0);">COLLEGE ADMINISTRATION REGISTRATION</h2>
+
+        <table border="3" align="center" cellspacing="8" style="height: 1000px; width: 550px;">
+            <tr>
+                <td>
+                    <label for="fname">FULL NAME</label>
+                </td>
+                <td>
+                    <input type="text" id="fname" placeholder="Fullname">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="email">E-mail</label>
+                </td>
+                <td>
+                    <input type="email" id="email" placeholder="abcd@gmail.com">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="phone">Phone Number</label>
+                </td>
+                <td>
+                    <input type="number" id="phone" placeholder="Phone Number">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="gender">Gender</label>
+                </td>
+                <td>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" id="Female" name="gender">
+                    <label for="Female">Female</label>
+                    <input type="radio" id="Other" name="gender">
+                    <label for="Other">Other</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td> <label for="course">Course Applying for</label></td>
+
+                <td>
+                    <select id="course">
+                        <option value="">--Select--</option>
+                        <option value="B.Tech">B.Tech</option>
+                        <option value="M.Tech">M.Tech</option>
+                        <option value="M.B.A">M.B.A</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td> <label for="hobbies">Hobbies</label></td>
+                
+                <td>
+                    
+                <input type="checkbox" id="Sports">
+                <label for="Sports">Sports</label>
+
+                <input type="checkbox" id="Music">
+                <label for="Music">Music</label>
+
+                <input type="checkbox" id="Reading">
+                <label for="Reading">Reading</label>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="date">Date</label></td>
+
+                <td> <input type="date" id="date"> </td>
+            </tr>
+            
+            <tr>
+                <td><label for="certificates">Upload Certificates</label></td>
+                <td>
+                    <input type="file" id="certificates" multiple>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="address">Address</label></td>
+                <td>
+                    <textarea rows="7" cols="30" id="address" placeholder="Enter your address here!!"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="padding-left: 140px;">
+                    <button type="reset" onclick="alert('Reset Succesfull..')">Reset</button>
+                    <button type="submit" onclick="alert('Submitted Succesfully..')">submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
