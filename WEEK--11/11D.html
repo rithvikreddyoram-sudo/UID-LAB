@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mobile Validation</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(120deg, #19ff38, #00ffae); /* changed color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background: rgb(234, 255, 0);
+    padding: 30px;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 2px solid #ccc;
+}
+
+#msg {
+    margin-top: 10px;
+    font-weight: bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+    <h2>Mobile & Password</h2>
+
+    <input type="text" id="mobile" placeholder="Enter Mobile" onblur="validateMobile()">
+    <input type="password" id="pass" placeholder="Enter Password" onkeyup="checkPass()">
+
+    <p id="msg"></p>
+</div>
+
+<script>
+function validateMobile() {
+    let num = document.getElementById("mobile").value;
+    let msg = document.getElementById("msg");
+    let pattern = /^[0-9]{10}$/;
+
+    if (pattern.test(num)) {
+        msg.innerText = "Valid Mobile Number";
+        msg.style.color = "green";
+    } else {
+        msg.innerText = "Invalid Mobile Number";
+        msg.style.color = "red";
+    }
+}
+
+function checkPass() {
+    let pass = document.getElementById("pass").value;
+    let strong = /^(?=.*[A-Z])(?=.*[!@#$%^&*]).{6,}$/;
+    let msg = document.getElementById("msg");
+
+    if (strong.test(pass)) {
+        msg.innerText = "Strong Password";
+        msg.style.color = "green";
+    } else {
+        msg.innerText = "Weak Password";
+        msg.style.color = "red";
+    }
+}
+</script>
+
+</body>
+</html>
